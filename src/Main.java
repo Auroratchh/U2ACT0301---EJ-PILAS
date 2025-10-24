@@ -42,7 +42,7 @@ public class Main {
         boolean volver = false;
 
 
-        System.out.println("      MÓDULO DE HISTORIAL DE NAVEGACIÓN              ");
+        System.out.println("     MÓDULO DE HISTORIAL DE NAVEGACIÓN         ");
 
 
         while (!volver) {
@@ -94,7 +94,7 @@ public class Main {
         System.out.println("      GESTOR DE DESHACER/REHACER            ");
 
         while (!volver) {
-            System.out.println("\nEditor de Texto ---");
+            System.out.println("\nEditor de Texto");
             System.out.println("Contenido actual: \"" + editor.getContenido() + "\"");
 
             System.out.println("\n1. Insertar texto");

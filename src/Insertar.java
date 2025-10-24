@@ -27,6 +27,6 @@ public class Insertar implements Comando {
 
     @Override
     public String toString() {
-        return "Insertar['" + texto + "' en pos " + posicion + "]";
+        return "Insertar['" + texto + "' en posición " + posicion + "]";
     }
 }

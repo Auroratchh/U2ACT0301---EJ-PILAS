@@ -29,6 +29,10 @@ public class Main {
         scanner.close();
     }
 
+    /**
+     Muestra el menú principal de la aplicación.
+     Presenta las opciones disponibles al usuario.
+     */
     private static void mostrarMenuPrincipal() {
         System.out.println("          PILAS                  ");
         System.out.println("1. Módulo de Historial de Navegación ");
@@ -36,6 +40,11 @@ public class Main {
         System.out.println("0. Salir");
         System.out.print("\nSeleccione una opción: ");
     }
+
+    /**
+     Ejecuta el módulo de historial de navegación web.
+     Simula un navegador con funcionalidad de ir atrás y adelante.
+     */
 
     private static void moduloNavegacion() {
         HistorialNavegacion navegador = new HistorialNavegacion();
@@ -87,6 +96,10 @@ public class Main {
         }
     }
 
+    /**
+     Ejecuta el módulo de editor de texto con deshacer/rehacer.
+     Permite insertar, borrar, deshacer y rehacer operaciones.
+     */
     private static void moduloEditor() {
         GestorDeshacerRe editor = new GestorDeshacerRe();
         boolean volver = false;

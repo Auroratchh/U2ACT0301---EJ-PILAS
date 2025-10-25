@@ -2,7 +2,11 @@ public class Insertar implements Comando {
     private String texto;
     private int posicion;
 
-    public Insertar(String texto, int posicion) {
+/**
+ Constructor del comando de inserción.
+ */
+
+ public Insertar(String texto, int posicion) {
         this.texto = texto;
         this.posicion = posicion;
     }
@@ -15,6 +19,10 @@ public class Insertar implements Comando {
         contenido.insert(posicion, texto);
     }
 
+    /**
+     Deshace la inserción eliminando el texto previamente agregado.
+     Borra exactamente la cantidad de caracteres que fueron insertados.
+     */
     @Override
     public void deshacer(StringBuilder contenido) {
 
@@ -24,6 +32,11 @@ public class Insertar implements Comando {
             contenido.delete(inicio, fin);
         }
     }
+
+    /**
+     Retorna una representación en String del comando.
+     Muestra el texto insertado y su posición.
+     */
 
     @Override
     public String toString() {
